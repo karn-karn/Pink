@@ -1,0 +1,82 @@
+.main-feature {
+  position: relative;
+  width: 310px;
+  padding: 48px 0 0 0;
+  margin: 0 0 0 auto;
+
+  @media (min-width: @tablet) {
+    padding: 40px 0 0 0;
+  }
+
+  @media (min-width: @desktop) {
+    width: 534px;
+    padding: 111px 36px 120px 0;
+  }
+}
+
+.main-feature::before {
+  @media (min-width: @tablet) {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -310px;
+    width: 238px;
+    height: 276px;
+    background-image: url("../img/clock-tablet.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+
+  @media (min-width: @desktop) {
+    content: "";
+    position: absolute;
+    top: 17px;
+    left: -369px;
+    width: 298px;
+    height: 345px;
+    background-image: url("../img/clock-desktop.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+}
+
+.main-feature__title {
+  padding: 0;
+  margin: 0 0 11px 0;
+  font-size: 30px;
+  line-height: 36px;
+
+  @media (min-width: @desktop) {
+    line-height: 30px;
+    margin-bottom: 25px;
+  }
+}
+
+.main-feature__title br {
+  @media (min-width: @desktop) {
+    display: none;
+  }
+}
+
+.main-feature__description {
+  margin: 0 0 7px 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 24px;
+
+  @media (min-width: @desktop) {
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 31px;
+  }
+}
+
+.main-feature__link {
+  line-height: 24px;
+  color: @red;
+
+  @media (min-width: @desktop) {
+    font-size: 18px;
+    line-height: 30px;
+  }
+}

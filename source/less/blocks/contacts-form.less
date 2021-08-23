@@ -1,0 +1,115 @@
+.contacts-form {
+  display: grid;
+
+  @media (max-width: 659px) {
+    border: none;
+    padding: 31px 20px 44px;
+  }
+
+  @media (min-width: @tablet) {
+    padding: 30px 0 0 0;
+  }
+
+  @media (min-width: @desktop) {
+    padding: 28px 0 0 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(2, auto);
+  }
+}
+
+.contacts-form .form__title {
+  @media (max-width: 659px) {
+    display: none;
+  }
+
+  color: @red;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+.contacts-form__title {
+  padding: 0 0 10px 24px;
+  color: @red;
+  text-transform: uppercase;
+
+  @media (min-width: @tablet) {
+    padding: 0;
+    margin: 0 0 29px 78px;
+  }
+
+  @media (min-width: @desktop) {
+    margin-bottom: 13px;
+  }
+
+  &:first-of-type {
+    @media (min-width: @tablet) {
+      grid-row-start: 2;
+    }
+  }
+
+  &:last-of-type {
+    @media (min-width: @tablet) {
+      grid-row-start: 4;
+    }
+
+    @media (min-width: @desktop) {
+      margin-left: 52px;
+      grid-row-start: 2;
+    }
+  }
+}
+
+.contacts-form__phone,
+.contacts-form__email {
+  position: relative;
+  font-size: 18px;
+  padding: 16px 0 16px 20px;
+  border: 2px solid @dark-grey;
+  border-radius: 1px;
+}
+
+.contacts-form__phone {
+  margin-bottom: 18px;
+
+  @media (min-width: @tablet) {
+    grid-row-start: 1;
+    margin: 0 58px 11px;
+    padding: 18px 60px 18px 20px;
+    background-image: url("../img/phone-icon.svg");
+    background-repeat: no-repeat;
+    background-position: top 0 right 0;
+    background-size: 58px 58px;
+  }
+
+  @media (min-width: @desktop) {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    padding: 18px 60px 18px 20px;
+    margin: 0 35px 11px 58px;
+  }
+}
+
+.contacts-form__email {
+  @media (min-width: @tablet) {
+    grid-row-start: 3;
+    margin: 0 58px 10px;
+    padding: 18px 60px 18px 20px;
+    background-image: url("../img/mail-icon.svg");
+    background-repeat: no-repeat;
+    background-position: top 0 right 0;
+    background-size: 58px 58px;
+  }
+
+  @media (min-width: @desktop) {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    margin: 0 58px 11px 35px;
+  }
+}

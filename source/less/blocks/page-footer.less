@@ -1,0 +1,120 @@
+.page-footer__wrapper {
+  margin: 0 auto;
+  padding: 40px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+
+  @media (min-width: @tablet) {
+    padding: 25px 20px 40px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  @media (min-width: @desktop) {
+    padding: 60px 130px 75px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.page-footer__logo {
+  width: 145px;
+  height: 40px;
+  margin-top: -13px;
+  margin-bottom: 37px;
+
+  @media (min-width: @tablet) {
+    margin: 0;
+    padding-bottom: 10px;
+  }
+
+  @media (min-width: @desktop) {
+    width: 147px;
+    margin: 0;
+  }
+}
+
+.page-footer__logo-pink path {
+  fill: @dark-blue;
+}
+
+.page-footer__socials {
+  width: 178px;
+  height: 54px;
+  padding: 0;
+  margin: 0 0 38px 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+
+  @media (min-width: @tablet) {
+    margin: 2px 15px 0 0;
+  }
+
+  @media (min-width: @desktop) {
+    width: 172px;
+    margin: 0;
+  }
+}
+
+.page-footer__twitter,
+.page-footer__facebook,
+.page-footer__youtube {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 3px solid fade(@dark-blue, 10%);
+
+  &:active {
+    opacity: 0.1;
+  }
+
+  &:hover {
+    border-color: @dark-blue;
+  }
+}
+
+.page-footer__copyright {
+  width: 130px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (min-width: @desktop) {
+    width: 151px;
+  }
+}
+
+.page-footer__copyright-text {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: normal;
+
+  @media (min-width: @desktop) {
+    font-size: 18px;
+  }
+}
+
+.page-footer__copyright-link {
+  display: block;
+  width: 27px;
+  height: 34px;
+
+  &:hover .page-footer__copyright-icon {
+    fill: @dark-blue;
+  }
+
+  &:active .page-footer__copyright-icon {
+    opacity: 0.3;
+  }
+}
+
+.page-footer__copyright-icon {
+  fill: @red;
+}

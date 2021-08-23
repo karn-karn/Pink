@@ -1,0 +1,29 @@
+.button {
+  padding: 21px 46px;
+  color: @white;
+  font-weight: bold;
+  font-size: 18px;
+  text-transform: uppercase;
+  background-color: @green;
+  border-radius: 1px;
+  border: none;
+  cursor: pointer;
+
+  &:hover {
+    background-color: @dark-green;
+  }
+
+  &:active {
+    color: fade(@white, 30%);
+    background-color: @dark-green;
+  }
+
+  &:disabled {
+    background-color: @dark-grey;
+    cursor: auto;
+  }
+
+  @media (min-width: @tablet) {
+    padding: 21px 56px;
+  }
+}

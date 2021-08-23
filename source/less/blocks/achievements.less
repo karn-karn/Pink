@@ -1,0 +1,107 @@
+.achievements {
+   @media (max-width: 659px) {
+    background-color: @grey;
+    background-size: 100%;
+    padding: 38px 0 44px 0;
+  }
+
+  @media (min-width: @tablet) {
+    padding: 0 20px;
+  }
+
+  @media (min-width: @desktop) {
+    padding: 0;
+  }
+}
+
+.achievements__fieldset {
+  margin: 0 auto;
+
+  @media (max-width: 659px) {
+    padding: 0 20px;
+    border: none;
+  }
+
+  @media (min-width: @tablet) {
+    padding: 5px 0 50px 58px;
+  }
+
+  @media (min-width: @desktop) {
+    padding: 5px 58px 0;
+  }
+}
+
+.achievements__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  @media (min-width: @desktop) {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-between;
+    height: 173px;
+  }
+}
+
+.achievements__item:not(:last-child) {
+  margin-bottom: 51px;
+}
+
+.achievements__title {
+  margin: 0 auto 42px;
+  color: @red;
+  line-height: 18px;
+  text-transform: uppercase;
+  text-align: center;
+
+  @media (min-width: @tablet) {
+    padding: 0 30px;
+  }
+}
+
+.achievements__title br {
+  @media (min-width: @tablet) {
+    display: none;
+  }
+}
+
+.achievements__input {
+  position: relative;
+  font-size: 18px;
+  padding: 0 0 0 59px;
+}
+
+.achievements__checkbox + .achievements__input::before {
+  content: "";
+  position: absolute;
+  top: -7px;
+  left: 0;
+  width: 35px;
+  height: 35px;
+  background-color: @white;
+  border: 2px solid @dark-grey;
+  border-radius: 1px;
+}
+
+.achievements__checkbox:hover + .achievements__input::before {
+  border-color: @dark-blue;
+}
+
+.achievements__checkbox:active + .achievements__input::before {
+  border-color: @red;
+}
+
+.achievements__checkbox:checked + .achievements__input::after {
+  content: "";
+  position: absolute;
+  left: 9px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 22px;
+  height: 16px;
+  background-image: url("../img/tick.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}

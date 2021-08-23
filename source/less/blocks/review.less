@@ -1,0 +1,73 @@
+.review {
+  padding: 50px 0 31px 0;
+
+  @media (min-width: @tablet) {
+    padding: 0 0 46px 0;
+  }
+
+  @media (min-width: @desktop) {
+    padding: 0;
+  }
+}
+
+.review__author {
+  display: block;
+  color: @black;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 13px;
+  text-align: center;
+  margin: 0 0 20px 0;
+
+  @media (min-width: @tablet) {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+
+  @media (min-width: @desktop) {
+    font-size: 24px;
+    margin-bottom: 19px;
+  }
+}
+
+.review__author-info {
+  line-height: 14px;
+  text-align: center;
+
+  @media (min-width: @desktop) {
+    font-size: 18px;
+  }
+}
+
+.review__author-info--hidden {
+  display: none;
+
+  @media (min-width: @tablet) {
+    display: block;
+  }
+
+  @media (min-width: @desktop) {
+    display: block;
+  }
+}
+
+.review__content {
+  color: @dark-blue;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  line-height: 30px;
+
+  @media (min-width: @tablet) {
+    width: 620px;
+    order: -1;
+    font-size: 18px;
+    margin: 0 auto 44px;
+  }
+
+  @media (min-width: @desktop) {
+    width: 688px;
+    margin: 0 auto 45px;
+  }
+}

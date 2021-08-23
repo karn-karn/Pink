@@ -1,0 +1,80 @@
+.gallery-post:not(:first-of-type) {
+  @media (min-width: @tablet) {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.gallery-post__top-post {
+  position: relative;
+  color: @white;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 24px;
+  text-transform: uppercase;
+  background-color: @red;
+  padding: 5px 0 7px;
+  margin: 0 20px -36px auto;
+  width: 140px;
+  text-align: center;
+  z-index: 1;
+
+  @media (min-width: @tablet) {
+    margin-bottom: -93px;
+  }
+
+  @media (min-width: @desktop) {
+    margin-right: 130px;
+    margin-bottom: -91px;
+  }
+}
+
+.gallery-post__img {
+  width: 100%;
+  height: auto;
+  vertical-align: bottom;
+}
+
+.gallery-post__author {
+  font-weight: bold;
+  line-height: 24px;
+}
+
+.gallery-post__time-posted {
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.gallery-post__comment {
+  line-height: 24px;
+  padding: 0;
+  margin: 0 0 40px 0;
+}
+
+.gallery-post__likes,
+.gallery-post__likes-number {
+  position: relative;
+  color: @red;
+  font-size: 12px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.gallery-post__likes {
+  padding-left: 32px;
+}
+
+.gallery-post__likes::before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 0;
+  width: 13px;
+  height: 12px;
+  background-image: url("../img/heart.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}

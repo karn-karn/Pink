@@ -1,0 +1,57 @@
+.apps-list {
+  margin: 0 auto 20px;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 204px;
+  height: 56px;
+
+  @media (min-width: @tablet) {
+    margin-bottom: 34px;
+    width: 207px;
+  }
+
+  @media (min-width: @desktop) {
+    margin-bottom: 54px;
+  }
+}
+
+.apps-list__apple {
+  display: block;
+  width: 47px;
+  height: 56px;
+}
+
+.apps-list__android {
+  display: block;
+  width: 43px;
+  height: 47px;
+  padding-bottom: 3px;
+
+  @media (min-width: @tablet) {
+    padding-right: 2px;
+  }
+
+  @media (min-width: @desktop) {
+    padding-bottom: 2px;
+  }
+}
+
+.apps-list__windows {
+  display: block;
+  width: 44px;
+  height: 41px;
+  padding-bottom: 3px;
+
+  @media (min-width: @tablet) {
+    padding-right: 3px;
+    padding-bottom: 6px;
+  }
+
+  @media (min-width: @desktop) {
+    padding-bottom: 2px;
+    padding-right: 2px;
+  }
+}

@@ -1,0 +1,44 @@
+.name {
+  border: none;
+
+  @media (min-width: @tablet) and (max-width: 1199px) {
+    width: 94%;
+  }
+}
+
+.name__flex {
+  display: flex;
+  flex-direction: column;
+
+  &:not(:last-child) {
+    margin-bottom: 16px;
+
+    @media (min-width: @tablet) {
+      margin-bottom: 54px;
+    }
+  }
+
+  @media (min-width: @tablet) {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+.name__title {
+  color: @red;
+  text-transform: uppercase;
+  margin: 0 0 7px 23px;
+
+
+  @media (min-width: @tablet) {
+    margin: 0 22px 0 0;
+  }
+}
+
+.name__field {
+  padding: 18px 0 18px 20px;
+  font-size: 18px;
+  border: 2px solid @dark-grey;
+  border-radius: 1px;
+  flex-grow: 1;
+}

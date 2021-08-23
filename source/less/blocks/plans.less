@@ -1,0 +1,320 @@
+.plans {
+  position: relative;
+  padding: 129px 0 46px 0;
+  background-image: url("../img/grey-background.svg");
+  background-repeat: no-repeat;
+  background-position: top 0;
+  background-size: 100%;
+  z-index: 1;
+
+  @media (min-width: @tablet) {
+    padding: 112px 0 70px 0;
+    background-image: url("../img/grey-background-tablet.svg");
+  }
+
+  @media (min-width: @desktop) {
+    margin-bottom: 58px;
+    padding: 157px 0 98px 0;
+    background-image: url("../img/grey-background-desktop.svg");
+  }
+}
+
+.plans__wrapper {
+  margin: 0 auto;
+  padding: 0 20px;
+
+  @media (min-width: @tablet) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  @media (min-width: @desktop) {
+    margin: 0 auto;
+    padding: 0 130px;
+  }
+}
+
+.plans__item {
+  margin: 0 0 42px 0;
+
+  @media (min-width: @tablet) {
+    margin: 0;
+  }
+}
+
+.plans__item--basic {
+  position: relative;
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+.plans__item--basic .plans__option-wrapper-pink,
+.plans__item--basic .plans__option-wrapper-smile,
+.plans__item--basic .plans__option-wrapper-comment {
+  display: block;
+  margin-left: -100%;
+  width: 100%;
+  background-color: @white;
+  transform: translate(-1.1%, -5%);
+}
+
+.plans__item--basic .plans__option-title {
+  display: block;
+  padding: 18px 0 17px 15px;
+
+  @media (min-width: @desktop) {
+    font-size: 18px;
+    padding: 23px 0 26px 22px;
+  }
+}
+
+.plans__option-wrapper-pink .plans__option-title {
+  border-top: 2px solid @dark-grey;
+  border-bottom: 2px solid @dark-grey;
+  border-left: 2px solid @dark-grey;
+  border-radius: 1px 0 0 0;
+}
+
+.plans__option-wrapper-smile .plans__option-title {
+  border-left: 2px solid @dark-grey;
+  border-top: 2px solid @dark-grey;
+  transform: translateY(1%);
+  padding: 18px 0 19px 15px;
+
+  @media (min-width: @desktop) {
+    padding: 23px 0 25px 22px;
+  }
+}
+
+.plans__option-wrapper-comment .plans__option-title {
+  border-top: 2px solid @dark-grey;
+  border-bottom: 2px solid @dark-grey;
+  border-left: 2px solid @dark-grey;
+  border-radius: 0 0 0 1px;
+  transform: translateY(1%);
+}
+
+.plans__item--basic .plans__header {
+  border-left: 2px solid @dark-blue;
+  border-right: 1px solid @dark-grey;
+  border-radius: 1px 0 0 0;
+}
+
+.plans__item--standart {
+  grid-column-start: 3;
+  grid-column-end: 4;
+}
+
+.plans__item--standart .plans__header {
+  border-left: 1px solid @dark-grey;
+  border-right: 1px solid @dark-grey;
+}
+
+.plans__item--unlimited {
+  grid-column-start: 4;
+}
+
+.plans__item--unlimited .plans__header {
+  border-left: 1px solid @dark-grey;
+  border-right: 2px solid @dark-blue;
+  border-radius: 0 1px 0 0;
+}
+
+.plans__header {
+  position: relative;
+  padding: 19px 0 35px 0;
+  background-color: @dark-blue;
+  text-align: center;
+  overflow: hidden;
+
+  @media (min-width: @tablet) {
+    min-width: 152px;
+    padding: 20px 0 17px 0;
+  }
+
+  @media (min-width: @desktop) {
+    min-width: 233px;
+    padding: 24px 0 31px 0;
+  }
+}
+
+.plans__title {
+  margin: 0 0 15px 0;
+  padding: 0;
+  color: @white;
+  font-weight: 700;
+  font-size: 16px;
+  text-transform: uppercase;
+  line-height: 12px;
+
+  @media (min-width: @desktop) {
+    font-size: 18px;
+    margin: 0 0 17px 0;
+  }
+}
+
+.plans__price {
+  display: block;
+  line-height: 13px;
+  color: @white;
+  font-weight: 300;
+  font-size: 18px;
+
+  @media (min-width: @desktop) {
+    font-size: 24px;
+  }
+}
+
+.plans__hit {
+  display: block;
+  width: 140px;
+  position: absolute;
+  top: 15px;
+  left: -43px;
+  color: @white;
+  background-color: @red;
+  text-align: center;
+  text-transform: uppercase;
+  transform: rotate(-45deg);
+  line-height: 26px;
+
+  @media (min-width: @tablet) {
+    top: 13px;
+    left: -50px;
+    line-height: 20px;
+  }
+
+  @media (min-width: @desktop) {
+    top: 18px;
+    left: -40px;
+  }
+}
+
+.plans__options {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.plans__option {
+  line-height: 10px;
+  padding: 25px 0 24px 19px;
+  background-color: @white;
+  border-left: 2px solid @dark-grey;
+  border-right: 2px solid @dark-grey;
+  border-bottom: 2px solid @dark-grey;
+
+  @media (min-width: @tablet) {
+    border-left: 1px solid @dark-grey;
+    border-right: 1px solid @dark-grey;
+    padding: 0;
+    height: 45px;
+  }
+
+  @media (min-width: @desktop) {
+    height: 59px;
+  }
+}
+
+.plans__item--unlimited .plans__option {
+  @media (min-width: @tablet) {
+    border-right: 2px solid @dark-grey;
+  }
+}
+
+.plans__item--basic .plans__option {
+  @media (min-width: @tablet) {
+    border-left: 2px solid @dark-grey;
+  }
+}
+
+.plans__option-title {
+  text-transform: uppercase;
+
+  @media (min-width: @tablet) {
+    display: none;
+    text-transform: none;
+  }
+}
+
+.plans__option--yes,
+.plans__option--no {
+  position: relative;
+}
+
+.plans__option--yes::after {
+  content: "";
+  position: absolute;
+  top: 19px;
+  right: 15px;
+  width: 31px;
+  height: 21px;
+  background-image: url("../img/yes.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+
+  @media (min-width: @tablet) {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.plans__option--no::after {
+  content: "";
+  position: absolute;
+  top: 16px;
+  right: 17px;
+  width: 27px;
+  height: 27px;
+  background-image: url("../img/no.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+
+  @media (min-width: @tablet) {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.plans__toggles {
+  text-align: center;
+  margin: 0 auto;
+  padding: 0;
+  line-height: 0;
+  width: 62px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (min-width: @tablet) {
+    display: none;
+  }
+}
+
+.plans__toggle {
+  margin: 0;
+  padding: 0;
+  width: 6px;
+  height: 6px;
+  background-color: fade(@dark-blue, 30%);
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+
+  &:hover {
+    background-color: fade(@dark-blue, 60%);
+  }
+
+  &:active {
+    background-color: fade(@dark-blue, 10%);
+  }
+}
+
+.plans__toggle--current {
+  width: 12px;
+  height: 12px;
+  background-color: @white;
+  border: 3px solid @dark-blue;
+}

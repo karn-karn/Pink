@@ -1,0 +1,119 @@
+.reviews {
+  @media (min-width: @desktop) {
+    padding: 172px 0 41px 0;
+    background-image: url("../img/quotes.svg");
+    background-repeat: no-repeat;
+    background-position: center 63px;
+  }
+}
+
+.reviews__wrapper {
+  margin: 0 auto;
+  padding: 0 20px;
+
+  @media (min-width: @desktop) {
+    padding: 0 130px;
+  }
+}
+
+.reviews__list {
+  position: relative;
+}
+
+.reviews__toggles {
+  text-align: center;
+  margin: 0 auto 11px auto;
+  padding: 0;
+  line-height: 0;
+  width: 62px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (min-width: @tablet) {
+    margin: 0 auto;
+  }
+}
+
+.reviews__item {
+  margin: 0 auto;
+  padding: 0;
+}
+
+.reviews__prev,
+.reviews__next {
+  padding: 0;
+  width: 22px;
+  height: 41px;
+  border: none;
+  background-color: transparent;
+}
+
+.reviews__prev {
+  position: absolute;
+  top: 28px;
+  left: 0;
+}
+
+.reviews__next {
+  position: absolute;
+  top: 28px;
+  right: 0;
+}
+
+.reviews__next-arrow,
+.reviews__prev-arrow {
+  fill: fade(@dark-blue, 60%);
+}
+
+.reviews__next:hover .reviews__next-arrow,
+.reviews__prev:hover .reviews__prev-arrow {
+  fill: @dark-blue;
+}
+
+.reviews__next:active .reviews__next-arrow,
+.reviews__prev:active .reviews__prev-arrow {
+  fill: fade(@dark-blue, 30%);
+}
+
+.reviews__prev--hideen,
+.reviews__next--hidden {
+  display: none;
+
+  @media (min-width: @desktop) {
+    display: block;
+    cursor: pointer;
+  }
+}
+
+.reviews__toggle {
+  margin: 0;
+  padding: 0;
+  width: 6px;
+  height: 6px;
+  background-color: fade(@dark-blue, 30%);
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+
+  &:hover {
+    background-color: fade(@dark-blue, 60%);
+  }
+
+  &:active {
+    background-color: fade(@dark-blue, 10%);
+  }
+}
+
+.reviews__toggle--current {
+  width: 12px;
+  height: 12px;
+  background-color: @white;
+  border: 3px solid @dark-blue;
+}
+
+.reviews__toggles--visible {
+  @media (min-width: @desktop) {
+    display: none;
+  }
+}
